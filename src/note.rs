@@ -8,6 +8,6 @@ mod tuning;
 
 pub use errors::NoteError;
 pub use note::{Note, Notes};
-pub use tuning::Tuning;
-pub use pitch::{Pitch, NoteLetter};
+pub use pitch::{NoteLetter, Pitch};
 pub use pitch_symbol::PitchSymbol;
+pub use tuning::Tuning;

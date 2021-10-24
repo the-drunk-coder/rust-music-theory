@@ -29,7 +29,7 @@ mod scale_tests {
             (
                 (ScaleType::MelodicMinor, None),
                 vec![C, D, Ds, F, G, A, B, C],
-            )
+            ),
         ];
 
         for (scale_tuple, pitches) in scale_tuples.iter() {

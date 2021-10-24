@@ -1,5 +1,5 @@
 use crate::interval::Interval;
-use crate::note::{Note, Notes, Pitch, NoteLetter};
+use crate::note::{Note, NoteLetter, Notes, Pitch};
 use crate::scale::errors::ScaleError;
 use crate::scale::{Mode, ScaleType};
 use strum_macros::Display;
@@ -107,7 +107,10 @@ impl Notes for Scale {
 impl Default for Scale {
     fn default() -> Self {
         Scale {
-            tonic: Pitch { letter: NoteLetter::C, accidental: 0 },
+            tonic: Pitch {
+                letter: NoteLetter::C,
+                accidental: 0,
+            },
             octave: 0,
             scale_type: ScaleType::Diatonic,
             mode: Some(Mode::Ionian),

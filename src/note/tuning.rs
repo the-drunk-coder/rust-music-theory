@@ -1,3 +1,3 @@
 pub enum Tuning {
-    EqualTemperament
+    EqualTemperament,
 }
